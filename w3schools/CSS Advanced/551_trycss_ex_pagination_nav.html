@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>551_trycss_ex_pagination_nav</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      body {
+        background-color: white;
+      }
+      .pagination {
+        display: inline-block;
+      }
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 1px solid #ddd;
+      }
+      .pagination a.active {
+        background-color: #4caf50;
+        color: white;
+        border: 1px solid #4caf50;
+      }
+      .pagination a:hover:not(.active) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Next/Previous buttons:</p>
+    <div class="pagination">
+      <a href="#">❮</a>
+      <a href="#">❯</a>
+    </div>
+    <p>Navigation pagination:</p>
+    <div class="pagination">
+      <a href="#" class="active">Home</a>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>360_trycss3_border-image</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #borderimg {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(../images/border.png) 30 round;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The border-image Property</h1>
+    <p>
+      Here, the middle sections of the image are repeated to create the border:
+    </p>
+    <p id="borderimg">border-image: url(border.png) 30 round;</p>
+    <p>Here is the original image:</p>
+    <img src="../images/border.png" />
+    <p>
+      <strong>Note:</strong> Internet Explorer 10, and earlier versions, do not
+      support the border-image property.
+    </p>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
